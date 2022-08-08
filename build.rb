@@ -1,12 +1,12 @@
 #!/usr/bin/env ruby
 
-target = "pascal"
+target = "math"
 
 buildCommand = [
   "crystal build",
   ARGV.size>0 ? ARGV.join(' ') : "",
   "-o #{target}",
-  "src/run.cr",
+  "src/app.cr",
 ].join " "
 
 puts "buildCommand => #{buildCommand}"
